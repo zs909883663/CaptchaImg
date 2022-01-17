@@ -189,7 +189,9 @@ class CaptchaImg
  
         // 验证码使用随机字体
         $ttfPath = __DIR__ .'/../assets/' . ($this->useZh ? 'zhttfs' : 'ttfs') . '/';
- 
+  // 验证码使用随机字体
+        $ttfPath = __DIR__ . '/../assets/' . ($this->useZh ? 'zhttfs' : 'ttfs') . '/';
+
         if (empty($this->fontttf)) {
             $dir  = dir($ttfPath);
             $ttfs = [];
